@@ -14,30 +14,55 @@
             <h3>Bird Drawing</h3>
             <hr>
         </div>
+        
         <div class="userChoice">
             <h4>Choose Filling</h4>
+            <div class="Container">
             <div class="wingChoiceContainer">
             <label for="wing">Wing</label>
-            <input type="color">
+            <input type="color" id="wingColor" class="primary_color field-radio">
+            <span class="container" id="color_val"></span>
             </div>
             <div class="bodyChoiceContainer">
                 <label for="wing">Body</label>
-                <input type="color">
+                <input type="color" id="bodyColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
             </div>
             <div class="beakChoiceContainer">
                 <label for="wing">Beak</label>
-                <input type="color">
+                <input type="color" id="beakColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
             </div>
+        </div>
+    </div>
             <div class="headerContainer">
                 <h4>Generate Java Code</h4>
             </div>
             <div class="buttonContainer">
-                <div class="button">Code with Filling</div>
-                <div class="button">Code with No Filling</div>
+                <div class="button" id="filling">Code with Filling</div>
+                <div class="button" id="noFilling">Code with No Filling</div>
             </div>
 
-        </div>
+
     </main>
-    
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Java Code</h2>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="birdScript.js"></script>
 </body>
 </html>
