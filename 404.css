@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'Montserrat';
     background-color: #456268;
     text-align: center;
     color: #f4f9f9;
@@ -13,6 +14,9 @@ body {
     padding: 50px;
 }
 main {
+    transform: scale(2);
+    position: relative;
+    top: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;

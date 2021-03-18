@@ -4,6 +4,7 @@
 }
 
 body {
+    font-family: 'Montserrat';
     background-color: #456268;
     text-align: center;
     color: #f4f9f9;
@@ -15,12 +16,15 @@ body {
 
 
 main {
+    position: relative;
+    top: 150px;
     width: 700px;
     height: 100%;
     background-color: #79a3b1;
     margin: 0px 10px;
     border-radius: 5px;
     border: white solid 1px;
+    transform: scale(2);
 
 }
 
