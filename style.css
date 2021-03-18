@@ -18,7 +18,9 @@ h1 {
 }
 
 h3 {
-    margin: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat'
 }
 
 
@@ -41,9 +43,9 @@ h3 {
     align-items:center;
 }
 
-button {
+.viewButton {
     margin-top: 15px;
-    background-color: #a4ebf3; /* Green */
+    background-color: #5b7a85; /* Green */
     border: none;
     color: white;
     text-align: center;
@@ -51,17 +53,21 @@ button {
     cursor: pointer;
     border: black solid 1px;
     border-radius: 3px;
+    padding: 2px 4px;
 }
 
-button:hover {
-    background-color: lightgreen;
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fcf8ec;
 }
 
 
-.card:hover {
-    transform: scale(1.1,1.1);
+.viewButton:hover {
+    background-color: #92c6da;
 }
-
 
 
 .icon {
