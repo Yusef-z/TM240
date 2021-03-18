@@ -43,15 +43,18 @@ main {
     border: black solid 1px;
     border-radius: 3px;
     padding: 2px 4px;
+
 }
 .button:hover {
     background-color: #92c6da;
 }
 
 a {
-    text-decoration: none;
-}
+    color: inherit;
+    text-decoration: inherit;
+  }
 
 a:visited {
     color: #fcf8ec;
 }
+
