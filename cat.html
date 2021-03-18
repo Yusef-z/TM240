@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catStyling.css">
+    <title>Cat Drawing</title>
+</head>
+<body>
+    <main>
+        <div class="topSection">
+            <div class="birdImage"></div>
+            <h3>Cat Drawing</h3>
+            <hr>
+        </div>
+        
+        <div class="userChoice">
+            <h4>Choose Filling</h4>
+            <div class="Container">
+            <div class="faceChoiceContainer">
+            <label for="wing">Face</label>
+            <input type="color" id="faceColor" class="primary_color field-radio">
+            <span class="container" id="color_val"></span>
+            </div>
+            <div class="outerEarChoiceContainer">
+                <label for="">Outer Part of Ears</label>
+                <input type="color" id="outerColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
+            </div>
+            <div class="innerEarChoiceContainer">
+                <label for="">Inner Part of Ears</label>
+                <input type="color" id="innerColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
+            </div>
+            <div class="noseChoiceContainer">
+                <label for="">Nose</label>
+                <input type="color" id="noseColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
+            </div>
+            <div class="bodyChoiceContainer">
+                <label for="">Body</label>
+                <input type="color" id="bodyColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
+            </div>
+            <div class="tailChoiceContainer">
+                <label for="">Tail</label>
+                <input type="color" id="tailColor" class="primary_color field-radio">
+                <span class="container" id="color_val"></span>
+            </div>
+        </div>
+    </div>
+            <div class="headerContainer">
+                <h4>Generate Java Code</h4>
+            </div>
+            <div class="buttonContainer">
+                <div class="button" id="filling">Code with Filling</div>
+                <div class="button" id="noFilling">Code with No Filling</div>
+            </div>
+
+
+    </main>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Java Code</h2>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="catScript.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
-var wingInput = document.getElementById("wingColor");
-var bodyInput = document.getElementById("bodyColor");;
-var beakInput = document.getElementById("beakColor");;
-var wingColor = hexToDec(wingInput.value.substring(1));
-var bodyColor = hexToDec(bodyInput.value.substring(1));
-var beakColor = hexToDec(beakInput.value.substring(1));
+var faceInput = document.getElementById("wingColor");
+var outerInput = document.getElementById("bodyColor");;
+var innerInput = document.getElementById("beakColor");;
+var bodyColor = hexToDec(faceInput.value.substring(1));
+var outerColor = hexToDec(outerInput.value.substring(1));
+var innerColor = hexToDec(innerInput.value.substring(1));
 var modal = document.getElementById("myModal");
 
 
@@ -13,16 +13,16 @@ var javaCode;
 var fillingButton = document.getElementById("filling");
 var noFillingButton = document.getElementById("noFilling");
 
-wingInput.addEventListener("change",()=>{
-    wingColor = hexToDec(wingInput.value.substring(1))
+faceInput.addEventListener("change",()=>{
+    bodyColor = hexToDec(faceInput.value.substring(1))
 })
 
-bodyInput.addEventListener("change",()=>{
-    bodyColor = hexToDec(bodyInput.value.substring(1))
+outerInput.addEventListener("change",()=>{
+    outerColor = hexToDec(outerInput.value.substring(1))
 })
 
-beakInput.addEventListener("change",()=>{
-    beakColor = hexToDec(beakInput.value.substring(1))
+innerInput.addEventListener("change",()=>{
+    innerColor = hexToDec(innerInput.value.substring(1))
 })
 
 
@@ -73,17 +73,17 @@ fillingButton.addEventListener("click",(e) => {
         Ellipse2D blackEyeEllipse = new Ellipse2D.Double(75,82,28,20);
         Shape blackEye = rotateEye.createTransformedShape(blackEyeEllipse);
         Ellipse2D whiteEye = new Ellipse2D.Double(89,88,5,10);
-        g2d.setColor(new Color(${bodyColor}));
+        g2d.setColor(new Color(${outerColor}));
         g2d.fill(body);
         `
-        if(wingColor != bodyColor){
-            javaCode += `        g2d.setColor(new Color(${wingColor}));
+        if(bodyColor != outerColor){
+            javaCode += `        g2d.setColor(new Color(${bodyColor}));
             `
         }
         javaCode += `g2d.fill(wing);
         `
-        if(bodyColor != beakColor){
-            javaCode += `        g2d.setColor(new Color(${beakColor}));
+        if(outerColor != innerColor){
+            javaCode += `        g2d.setColor(new Color(${innerColor}));
             `
         }
         javaCode += `
@@ -184,7 +184,7 @@ function hexToDec(hexString){
   }
 
 
-console.log(hexToDec(wingColor))
+console.log(hexToDec(bodyColor))
 
 
 
